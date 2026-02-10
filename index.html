@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <title>E-commerce, CRM y estrategias de fidelización</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+        :root {
+            /* Paleta basada en el logo real */
+            --ow-purple-dark: #000917;   /* morado oscuro */
+            --ow-magenta:     #000917;   /* magenta principal */
+            --ow-rose-soft:   #000917;   /* fondo claro rosado */
+            --ow-text:        #111827;
+            --ow-muted:       #6b7280;
+            --ow-card:        #505F79;
+            --ow-card-border: #000917;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            margin: 0;
+            font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+            background: var(--ow-rose-soft);
+            color: var(--ow-text);
+        }
+
+        /* HERO CON GRADIENTE TIPO LOGO */
+        header {
+            background: radial-gradient(circle at top left, #000917 0%, #091B37 40%, #505F79 100%);
+            padding: 3rem 1.5rem 4rem;
+            color: #ffffff;
+        }
+
+        .hero-inner {
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        /* LOGO */
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .logo-img {
+            height: 120px;
+            width: 250px;
+            object-fit: contain;
+        }
+
+        .logo-text {
+            font-size: 1.35rem;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+        }
+
+        .hero-title {
+            font-size: clamp(2rem, 4vw, 2.7rem);
+            margin: 0 0 0.5rem;
+            font-weight: 700;
+        }
+
+        .hero-subtitle {
+            margin: 0;
+            font-size: 1rem;
+            opacity: 0.96;
+            max-width: 650px;
+        }
+
+        /* CONTENIDO PRINCIPAL */
+        .layout {
+            max-width: 960px;
+            margin: -2.5rem auto 3rem;
+            padding: 0 1.5rem;
+        }
+
+        .main-card {
+            background: var(--ow-card);
+            border-radius: 1rem;
+            padding: 1.6rem;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+            border: 1px solid var(--ow-card-border);
+        }
+
+        .section-title {
+            margin: 0 0 0.25rem;
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        .section-sub {
+            margin: 0 0 1rem;
+            color: var(--ow-muted);
+            font-size: 0.9rem;
+        }
+
+        /* GRID */
+        .grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr);
+            gap: 1rem;
+        }
+
+        @media (min-width: 640px) {
+            .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+        }
+
+        /* TARJETAS */
+        .card {
+            background: var(--ow-card);
+            border-radius: 0.85rem;
+            padding: 1rem 1.15rem;
+            border: 1px solid var(--ow-card-border);
+            transition: 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            border-color: var(--ow-magenta);
+        }
+
+        .card-title {
+            margin: 0;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+
+        .card-desc {
+            margin: 0.25rem 0 0.5rem;
+            font-size: 0.85rem;
+            color: var(--ow-muted);
+        }
+
+        .card-link a {
+            color: var(--ow-purple-dark);
+            text-decoration: none;
+            word-break: break-all;
+            font-size: 0.85rem;
+        }
+
+        .card-link a:hover {
+            color: var(--ow-magenta);
+            text-decoration: underline;
+        }
+
+        /* PILLS */
+        .pill {
+            display: inline-block;
+            background: rgba(9,30,66,0.12);
+            color: var(--ow-purple-dark);
+            padding: 0.15rem 0.55rem;
+            border-radius: 999px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            margin-bottom: 0.25rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            font-size: 0.8rem;
+            color: var(--ow-muted);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="hero-inner">
+
+        <!-- LOGO REAL -->
+        <div class="logo">
+            <img src="assets/logOW-white.png" alt="OpenWebinars Logo" class="logo-img">
+        </div>
+
+        <h1 class="hero-title">Recursos E-commerce, CRM y estrategias de fidelización</h1>
+        <p class="hero-subtitle">
+            Documentación oficial y enlaces recomendados para el curso
+            <strong>E-commerce, CRM y estrategias de fidelización</strong>.
+        </p>
+    </div>
+</header>
+
+<main class="layout">
+    <section class="main-card">
+
+        
+
+        <!-- DOCUMENTACIÓN -->
+        <h2 class="section-title" style="margin-top:2rem;">Material adicional</h2>
+        <p class="section-sub">Recursos que complementan los contenidos del curso.</p>
+
+        <div class="grid grid-1">
+
+            <div class="card">
+                <p class="pill">Plantilla para crear buyer persona</p>
+                <p class="section-sub">Esta plantilla sirve para identificar y describir al cliente ideal, entendiendo sus motivaciones, necesidades y hábitos de compra.</p>
+                <p class="card-link">
+                    <a href="https://github.com/OpenWebinarsNet/E-commerce-CRM-y-estrategias-de-fidelizaci-n/raw/refs/heads/main/Plantilla%20Buyer%20Persona.docx" target="_blank">
+                        → Descargar
+                    </a>
+                </p>
+            </div>
+
+                        <div class="card">
+                <p class="pill">Plantilla para crear la propuesta de valor</p>
+                <p class="section-sub">Esta plantilla ayuda a definir la esencia del negocio: qué ofrece, a quién y por qué es diferente.</p>
+                <p class="card-link">
+                    <a href="https://github.com/OpenWebinarsNet/E-commerce-CRM-y-estrategias-de-fidelizaci-n/raw/refs/heads/main/Plantilla%20Propuesta%20de%20Valor.docx" target="_blank">
+                        → Descargar
+                    </a>
+                </p>
+            </div>
+
+                        <div class="card">
+                <p class="pill">Enlace para cuenta gratis en Jumpseller </p>
+                <p class="section-sub">Con este enlace el alumno puede tener una prueba gratuita para crear su tienda online ficticia.</p>
+                <p class="card-link">
+                    <a href="https://jumpseller.es?ref=kromagency&utm_source=kromagency&utm_campaign=openwebinar" target="_blank">
+                        → Enlace
+                    </a>
+                </p>
+            </div>
+
+                        <div class="card">
+                <p class="pill">Enlace para cuenta gratis en Hubspot</p>
+                <p class="section-sub">Con este enlace el alumno puede tener una prueba gratuita para crear un CRM.</p>
+                <p class="card-link">
+                    <a href="https://app.hubspot.com/signup-hubspot/crm?hubs_signup-url=www.hubspot.es&hubs_signup-cta=homepage-nav2&__hstc=259582869.7926fdd5fc3678a8c28a4da8ba099eac.1761118714325.1762340756531.1763329698970.4&__hssc=259582869.5.1763329698970&__hsfp=3841060204&step=landing_page" target="_blank">
+                        → Enlace
+                    </a>
+                </p>
+            </div>
+
+                        <div class="card">
+                <p class="pill">Enlace para cuenta gratis en MailerLite</p>
+                <p class="section-sub">Con este enlace el alumno puede tener una prueba gratuita para crear un Correo Electrónico personalizado.</p>
+                <p class="card-link">
+                    <a href="https://www.mailerlite.com/es" target="_blank">
+                        → Enlace
+                    </a>
+                </p>
+            </div>
+
+                        <div class="card">
+                <p class="pill">Checkout de optimización de tienda online</p>
+                <p class="section-sub">Con este checklist los alumnos podrán revisar si su tienda está optimizada.</p>
+                <p class="card-link">
+                    <a href="https://github.com/OpenWebinarsNet/E-commerce-CRM-y-estrategias-de-fidelizaci-n/raw/refs/heads/main/CHECKLIST%20DE%20OPTIMIZACI%C3%93N%20DE%20TIENDA%20ONLINE.docx" target="_blank">
+                      → Descargar
+                    </a>
+                </p>
+            </div>
+
+                        <div class="card">
+                <p class="pill">Enlace para Tabla de KPIs</p>
+                <p class="section-sub">Con este enlace los alumnos podrán medir sus KPIs más importantes de su ecommerce y plantear mejoras.</p>
+                <p class="card-link">
+                    <a href="https://docs.google.com/spreadsheets/d/1mA8Q7YbHwWmWkOhjEvM1kP_IFl2ydnse3dTalyV13nc/edit?usp=sharing" target="_blank">
+                        → Enlace
+                    </a>
+                </p>
+            </div>
+
+            
+
+        </div>
+
+        <footer>
+            Recursos complementarios para el curso de OpenWebinars.
+        </footer>
+    </section>
+</main>
+
+</body>
+</html>
